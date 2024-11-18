@@ -1,0 +1,10 @@
+// Exemplo simples: Mostrar/ocultar um cardápio detalhado ao clicar em um item
+
+const cardapioItems = document.querySelectorAll('#cardapio li');
+
+cardapioItems.forEach(item => {
+    item.addEventListener('click', () => {
+        // Aqui você pode adicionar código para mostrar um cardápio mais detalhado para cada item
+        console.log(`Você clicou em ${item.textContent}`);
+    });
+});
